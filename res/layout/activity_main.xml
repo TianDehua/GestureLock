@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" 
+    android:orientation="vertical">
+
+    <com.tian.gesturelock.GestureIndexView
+        android:id="@+id/gesture_index"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_gesture_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:text="@string/gesture_request_paint"
+        android:textColor="@color/gray_dark"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:drawableRight="@null"
+        android:drawablePadding="20dp"
+        /> 
+   
+      <com.tian.gesturelock.GestureLock
+        android:id="@+id/gesture_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>
